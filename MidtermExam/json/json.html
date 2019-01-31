@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>json</title>
+	<script>
+		let http = new XMLHttpRequest();
+		let x = document.getElementbyID('Do');
+
+		function loadAjax(){
+			xttp.onreadstatechange=function(){
+				x.innerHTML = "Loading....Please be Patient";
+				if (http.readyonstate==4&& xhhtp.status==200){
+					let data = json.parse(xttp.response);
+					let html = "";
+				for (let i = 0; i =data.lenght,i++){
+					html+="<li"+data[i].completed+"></li>"
+				}
+
+				}
+				x.innerHTML= html;
+			}
+		}
+		xhttps.open("GET","https://jsonplaceholder.typicode.com/todos",true);
+		xhttp.send();
+	</script>
+</head>
+<body>
+	<h1 style="text-align: center;">Midterm Exam</h1>
+	<center>
+	<button onclick= "loadAjax()">Set B</button>
+	</center>
+	<ul id = "Do"></ul>
+
+
+</body>
+</html>

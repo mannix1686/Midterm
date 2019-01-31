@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style>
+	table{
+		border: 40px;
+		border-color: black;
+	}
+	td{
+		padding: 15px 20px;
+		text-align: center;
+
+	}
+	input{
+		text-align: center;
+		border: none;
+		width: 100%;
+		height:30px;
+		font-weight: bold;
+		font-size: 18px;
+	}
+	button{
+		width: 80px;
+		padding: 2px 2px;
+		font-size: 25px;
+		background: white;
+	}
+	</style>
+</head>
+<body>
+	<table style= "background: skyblue;">
+		<tr>
+			<td colspan="4"><input type ="text" id = "display"></td>
+
+		</tr>
+		<tr>
+			<td colspan="4"><input type = "text" id= "result"></td>
+
+		</tr>
+		<tr>
+			<td onclick="add('-')"><button>-</button></td>
+			<td onclick="add('*')"><button>*</button></td>
+			<td onclick="add('/')"><button>/</button></td>
+			<td onclick="add('+')"><button>+</button></td>
+		</tr>
+		<tr>
+			<td onclick="add('9')"><button>9</button></td>
+			<td onclick="add('8')"><button>8</button></td>
+			<td onclick="add('7')"><button>7</button></td>
+			<td onclick="add('6')"><button>6</button></td>
+		</tr>
+		<tr>
+			<td onclick="add('5')"><button>5</button></td>
+			<td onclick="add('4')"><button>4</button></td>
+			<td onclick="add('3')"><button>3</button></td>
+			<td onclick="add('2')"><button>2</button></td>
+			
+		</tr>
+		<tr>
+			<td onclick="add('1')"><button>1</button></td>
+			<td onclick="calculate()"><button>=</button></td>
+			<td colspam ="3" onclick="reset()"><button>reset</button></td>
+
+	</table>
+
+</body>
+</html>
+<script type="text/javascript" src="calc.js"></script>
